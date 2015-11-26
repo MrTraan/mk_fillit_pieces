@@ -32,7 +32,7 @@ var pRaw = map[int][4][]byte{
 }
 
 func AddPiece(b *bytes.Buffer) {
-	pNum := 6 //rand.Intn(len(pRaw))
+	pNum := rand.Intn(len(pRaw))
 	offX := rand.Intn(pMaxOff[pNum].x + 1)
 	offY := rand.Intn(pMaxOff[pNum].y + 1)
 	for i := 0; i < offY; i++ {
