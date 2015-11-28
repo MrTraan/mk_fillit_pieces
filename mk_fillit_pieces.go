@@ -65,8 +65,8 @@ func main() {
 	var b bytes.Buffer
 
 	rand.Seed(time.Now().UnixNano())
-	n := rand.Intn(27)
-	for i := 0; i < n; i++ {
+	n := rand.Intn(26)
+	for i := 0; i <= n; i++ {
 		AddPiece(&b)
 		if i != n {
 			b.WriteByte('\n')
